@@ -1,0 +1,26 @@
+.wrapper {
+    position: fixed;
+    top:0;
+    width: 399px;
+    display: grid;
+    grid-area: header;
+    border-right: 1px solid dimgrey;
+    border-bottom: 1px solid rgb(200, 200, 200);
+    background-color: rgb(230, 230, 230);
+    height: 125px;
+}
+
+.ava {
+    margin: 7px 0 0 30px;
+    border-radius: 30px;
+    height: 55px;
+    width: 55px;
+}
+
+.search {
+    margin: 30px 30px 10px 30px;
+    height: 23px;
+    width: 325px;
+    border-radius: 20px;
+    border: 0.5px solid #000;
+}

@@ -1,0 +1,92 @@
+::-webkit-scrollbar{
+    width: 1px;
+}
+
+.wrapper{
+    display: grid;
+    grid-area: sidebar;
+    border: 1px solid rgb(200,200,200);
+    background-color: whitesmoke;
+    grid-auto-rows: 90px;
+    position: fixed;
+    overflow-y: scroll;
+    width: 397px;
+    top: 125px;
+    bottom: 0;
+}
+
+
+.chat{
+    color:deepskyblue;
+    height: 100px;
+    margin: 20px 0 0 30px;
+    font-weight: normal;
+    font-size: 30px;
+}
+.ava{
+    grid-area: ava;
+    height: 50px;
+    width: 50px;
+    border-radius: 30px;
+}
+.chat_item{
+    display: grid;
+    grid-template-areas: 'ava name date''ava message date';
+    grid-template-rows: 20px;
+    height: 80px;
+    padding: 10px 0 0 10px;
+    max-height: 80px;
+    border-bottom: 1px solid rgb(200,200,200);
+}
+.chat_item .date{
+    grid-area: date;
+    text-align: right;
+    opacity: 40%;
+    margin: 0 5px 0 0;
+}
+.chat_item .message{
+    width: 200px;
+    max-height: 90px;
+    opacity: 50%;
+    grid-area: message;
+    margin:-5px 0 0 0;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.chat_item .name{
+    grid-area: name;
+    margin:-5px 0 0 0;
+}
+
+
+.chosen_item{
+    display: grid;
+    grid-template-areas: 'ava name date''ava message date';
+    grid-template-rows: 20px;
+    background-color: darkgray;
+    height: 80px;
+    padding: 10px 0 0 10px;
+    border-bottom: 1px solid rgb(200,200,200);
+}
+.chosen_item .date{
+    grid-area: date;
+    text-align: right;
+    opacity: 40%;
+    margin: 0 5px 0 0;
+}
+.chosen_item .message{
+     width: 200px;
+     opacity: 50%;
+    margin:-5px 0 0 0;
+    grid-area: message;
+    max-height: 90px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+ }
+.chosen_item .name{
+    grid-area: name;
+    margin:-5px 0 0 0;
+}
+.chosen_item span{
+    max-height: 30px;
+}

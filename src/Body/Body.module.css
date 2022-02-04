@@ -1,0 +1,132 @@
+.wrapper {
+    display: grid;
+    grid-area: body;
+    grid-template-areas: 'title''mid''footer';
+    grid-template-rows: 75px 1fr 100px;
+    grid-template-columns: 1fr;
+}
+
+
+.header {
+    position: fixed;
+    width: 100vw;
+    height: 75px;
+    display: grid;
+    background-color: rgb(230, 230, 230);
+    grid-template-columns: 80px 1fr;
+    align-items: center;
+    grid-area: title;
+    border-bottom: 1px solid rgb(200, 200, 200);
+}
+
+.header .header__text {
+    text-align: left;
+    font-size: 25px;
+}
+
+.header .header__photo {
+
+    margin: 0 0 0 10px;
+    height: 50px;
+    width: 50px;
+    border-radius: 30px;
+}
+
+
+.body {
+    display: grid;
+    grid-template-rows: repeat(auto-fill, 100px);
+    grid-area: mid;
+    background-color: white;
+    border-bottom: 1px solid rgb(200, 200, 200);
+    overflow-y: scroll;
+}
+
+
+.message {
+    display: grid;
+    justify-content: left;
+    grid-template-areas: 'MessagePhoto MessageText''MessagePhoto MessageDate';
+    align-items: center;
+}
+
+.message .img {
+    grid-area: MessagePhoto;
+    height: 50px;
+    width: 50px;
+    border-radius: 30px;
+    margin: 0 0 0 15px;
+
+}
+
+.message .text {
+    grid-area: MessageText;
+    max-width: 500px;
+    text-align: left;
+    border: 1px solid #000;
+    border-radius: 20px;
+    color: white;
+    font-family: Cambria;
+    background-color: rgb(64, 62, 70);
+    margin: 30px 0 0 20px;
+    padding: 5px 15px 7px 15px;
+}
+
+.message .date {
+    grid-area: MessageDate;
+    font-size: 10px;
+    opacity: 50%;
+    padding: 0 0 15px 30px;
+}
+
+.MyMessage {
+    display: grid;
+    justify-content: right;
+    grid-template-areas: 'MessagePhoto MessageText''MessagePhoto MessageDate';
+    align-items: center;
+}
+
+.MyMessage .MyText {
+    grid-area: MessageText;
+    text-align: left;
+    max-width: 500px;
+    border-radius: 20px;
+    color: black;
+    background-color: rgb(223, 222, 226);
+    font-family: Cambria;
+    margin: 30px 0 0 0;
+    padding: 5px 50px 7px 15px;
+}
+
+.MyMessage .MyDate {
+    grid-area: MessageDate;
+    font-size: 10px;
+    opacity: 50%;
+    padding: 0 0 15px 10px;
+}
+
+
+.footer {
+    grid-area: footer;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(230, 230, 230);
+    border-bottom: 1px solid rgb(200, 200, 200);
+    text-align: center;
+    align-items: center;
+}
+
+.footer__input {
+    width: 500px;
+    border-radius: 30px;
+    border: 1px solid #000;
+    height: 25px;
+    margin: 30px 0 0 0;
+    padding: 0 100px 0 15px;
+}
+.footer__button{
+    width:30px;
+    margin: 30px 300px 0 0;
+}

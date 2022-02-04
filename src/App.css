@@ -1,0 +1,7 @@
+.BODY{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 400px 1fr;
+    grid-template-rows: 125px 1fr;
+    grid-template-areas: "header body""sidebar body";
+}
